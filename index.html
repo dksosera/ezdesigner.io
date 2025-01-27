@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Sousa Ezembro, especialista em Web Design, UX e UI. Transformando ideias em experiências digitais.">
+    <meta name="keywords" content="Web Design, UX, UI, Portfólio, Sousa Ezembro, EzDesigner">
+    <meta property="og:title" content="EzDesigner - Transformando Ideias em Experiências Digitais">
+<meta property="og:description" content="Portfólio profissional de Sousa Ezembro, especialista em Web Design, UX e UI.">
+<meta property="og:image" content="link-para-imagem-do-site.jpg">
+<meta property="og:url" content="https://seusite.com">
+<meta property="og:type" content="website">
+<meta name="author" content="Sousa Ezembro">
+
+    <title>EzDesigner - Transformando Ideias</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            .navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #141E30;
+}
+
+        }
+        .hero {
+            background: linear-gradient(to right, rgba(36, 59, 85, 0.8), rgba(20, 30, 48, 0.8)), 
+                url('background-hero.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        }
+        .btn-dark:hover {
+            background-color: #3a3a3a;
+        }
+        .card {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+form .form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+form .btn {
+    background-color: #243B55;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+form .btn:hover {
+    background-color: #f9a825;
+    color: #000;
+}
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+        footer a:hover {
+            color: #f9a825;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-code"></i> EzDesigner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center" style="height: 100vh;">
+        <div class="container text-center" data-aos="fade-up">
+            <h1 class="display-3 fw-bold">Transformando Ideias em Experiências Digitais</h1>
+            <p class="lead mt-3">Design que inspira, conecta e encanta.</p>
+            <a href="#portfolio" class="btn btn-light btn-lg mt-4">Veja Meu Trabalho</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container" data-aos="fade-right">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Sobre Mim</h2>
+                    <p>Sou Sousa Ezembro, especialista em Web Design, UX e UI. Acredito no poder do design para criar experiências únicas e memoráveis.</p>
+                    <ul>
+                        <li><strong>Habilidades:</strong> Figma, Adobe XD, HTML, CSS, JavaScript</li>
+                        <li><strong>Experiência:</strong> Mais de 5 anos no mercado.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="about.webp" alt="Imagem de Sousa Ezembro" class="img-fluid rounded-circle" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfólio</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img1.png" class="card-img-top" alt="Sistema de Gerenciamento de Biblioteca">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Gerenciamento de Biblioteca</h5>
+                            <p class="card-text">Facilitando o rastreamento de livros, empréstimos e devoluções com um sistema eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img2.png" class="card-img-top" alt="Sistema de Rede de Computadores">
+                        <div class="card-body">
+                            <h5 class="card-title">Rede de Computadores para Empresa</h5>
+                            <p class="card-text">Conexões rápidas e seguras para melhorar a comunicação empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img3.png" class="card-img-top" alt="Website de Consultoria">
+                        <div class="card-body">
+                            <h5 class="card-title">Website para Consultoria</h5>
+                            <p class="card-text">Criação de um site moderno e funcional para atrair novos clientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Serviços</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                    <h5>Design de Sites Responsivos</h5>
+                    <p>Criando sites que se adaptam a qualquer dispositivo.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-palette fa-3x mb-3"></i>
+                    <h5>Identidade Visual</h5>
+                    <p>Design único para representar a sua marca.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-user-check fa-3x mb-3"></i>
+                    <h5>Pesquisa de Usuários</h5>
+                    <p>Entendendo as necessidades do seu público.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div data-aos="fade-right" data-aos-duration="1000">
+        <!-- conteúdo -->
+    </div>
+    <div data-aos="zoom-in" data-aos-duration="1000">
+        <!-- conteúdo -->
+    </div>
+    
+
+    <!-- Contato -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Outros ajustes mantêm a estrutura semelhante, mas seguem com mais profissionalismo -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-2">© 2025 EzDesigner - Todos os direitos reservados</p>
+        <a href="#top" class="btn btn-outline-light btn-sm">Voltar ao topo</a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        document.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+    </script>
+</body>
+</html>
